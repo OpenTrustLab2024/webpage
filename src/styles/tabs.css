@@ -1,0 +1,14 @@
+.tab:hover button{
+    color :rgb(1,97,239);
+    text-decoration: underline;
+}
+
+.tab {
+    margin: 1em;
+    padding: 1.5em;
+}
+
+.active button{  
+    color :rgb(1,97,239);
+    text-decoration: underline;
+}

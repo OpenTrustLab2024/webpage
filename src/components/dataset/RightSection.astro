@@ -1,0 +1,34 @@
+---
+import '../../styles/rightSection.css';
+export interface Props {
+  links: object;
+  authors: object[];
+  bibtex: string;
+}
+
+const { links, authors, bibtex } = Astro.props;
+---
+
+<div>
+  <h4>Paper Link</h4>
+  <a href={links.url}>{links.text}</a>
+  <h4>Authors</h4>
+  <ul>
+    {
+      authors
+        ? authors.map((item) => {
+            return (
+              <li>
+                <a href="" class="authorContainer flex">
+                  <img src={item.avatar} class="avatar w-12 h-12" />
+                  <div class="authorName">{item.name}</div>
+                </a>
+              </li>
+            );
+          })
+        : null
+    }
+  </ul>
+  <h4>Bibtex</h4>
+  <p>{bibtex}</p>
+</div>

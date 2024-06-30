@@ -1,0 +1,17 @@
+---
+import '../../styles/descriptionSection.css';
+export interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<div style="margin-top: 3em;">
+  <center>
+    <h2 class="title">Introduction</h2>
+  </center>
+  <p class="content">
+    {text}
+  </p>
+</div>

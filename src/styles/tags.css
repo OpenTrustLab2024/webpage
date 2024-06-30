@@ -1,0 +1,16 @@
+.tagsContainer{
+    padding:5px;
+}
+
+.tagItem {
+    font-weight: 500;
+    background-color: rgb(243, 244, 246);
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.tagItem:hover{
+    color: rgb(1,97,239);
+}

@@ -25,6 +25,7 @@
     "astro": "^4.7.0",
     "astro-embed": "^0.7.1",
     "astro-icon": "^1.1.0",
+    "bibtex-js-parser": "^1.1.6",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
     "unpic": "^3.18.0"
@@ -32,7 +33,7 @@
   "devDependencies": {
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/partytown": "^2.1.0",
-    "@astrojs/tailwind": "5.1.0",
+    "@astrojs/tailwind": "^5.1.0",
     "@eslint/js": "^9.1.1",
     "@iconify-json/flat-color-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.110",
@@ -55,7 +56,7 @@
     "rehype-plugin-image-native-lazy-loading": "^1.2.0",
     "sharp": "0.33.3",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss": "^3.4.3",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.7.1"
   }

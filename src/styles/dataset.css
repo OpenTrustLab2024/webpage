@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+
+.figureContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure{
+    width: 80%;
+}
+
+.datasetName {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.mainContainer {  
+    display: flex;  
+    width: 100%;  
+    flex-direction: row;
+}  
+  
+.left-section {  
+    flex: 3; /* 占据3/4的空间 */  
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    padding-left: 180px;
+    padding-right: 180px;
+}  
+  
+.right-section {  
+    flex: 1; /* 占据1/4的空间 */  
+    /* background-color: #ddd; */
+    padding: 20px;
+}

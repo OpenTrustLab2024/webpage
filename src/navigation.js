@@ -19,6 +19,10 @@ export const headerData = {
       href: getPermalink('/blog'),
     },
     {
+      text: 'Dataset',
+      href: getPermalink('/dataset'),
+    },
+    {
       text:'Code',
       href:''
     }
