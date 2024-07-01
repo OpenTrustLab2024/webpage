@@ -10,7 +10,7 @@ import Tabs from '~/components/dataset/Tabs.astro';
 // import { BibtexParser } from 'bibtex-js-parser';
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('dataset');
+const posts = await getCollection('data');
 // const { body } = posts[posts.length - 1];
 // const { bibtex, tags, author, title, image, journal } = posts[posts.length - 1].data;
 const { body } = posts[0];

@@ -1,0 +1,37 @@
+---
+import { Astro } from 'astro';
+import fs from 'fs';
+import path from 'path';
+import { dataList } from '../../utils/data';
+import Layout from '~/layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return dataList.map(data => ({
+    params: { id: data.id },
+  }));
+}
+
+const { id } = Astro.params;
+const dataItem = dataList.find(data => data.id === id);
+
+let content = '';
+if (dataItem) {
+  const filePath = path.resolve(`../..//src/content/data/${id}.md`);
+  try {
+    content = fs.readFileSync(filePath, 'utf-8');
+  } catch (error) {
+    console.error(`Failed to read file at ${filePath}:`, error);
+  }
+}
+---
+
+<Layout>
+  {dataItem ? (
+    <>
+      <h1>{dataItem.title}</h1>
+      <div set:html={content}></div>
+    </>
+  ) : (
+    <p>Data not found.</p>
+  )}
+</Layout>

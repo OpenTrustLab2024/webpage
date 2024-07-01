@@ -1,0 +1,15 @@
+---
+import { dataList } from '../../utils/data';
+import Layout from '~/layouts/PageLayout.astro';
+---
+
+<Layout>
+  <h1>Dataset</h1>
+  <ul>
+    {dataList.map(data => (
+      <li key={data.id}>
+        <a href={`/data/${data.id}`}>{data.title}</a>
+      </li>
+    ))}
+  </ul>
+</Layout>
