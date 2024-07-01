@@ -28,6 +28,7 @@
     "bibtex-js-parser": "^1.1.6",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
+    "marked": "^13.0.1",
     "unpic": "^3.18.0"
   },
   "devDependencies": {
