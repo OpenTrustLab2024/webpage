@@ -5,7 +5,6 @@ title: SALAD-Bench
 excerpt: A Hierarchical and Comprehensive Safety Benchmark for Large Language Models
 logo: ~/assets/images/dataset/SALAD-Bench-logo.png
 image: ~/assets/images/dataset/SALAD-Bench.png
-category: null
 journal: arXiv preprint arXiv:2402.05044,
 tags:
   - Natural Language
