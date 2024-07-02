@@ -3,8 +3,8 @@ publishDate: 2024-03-01T00:00:00Z
 author: Zhelun Shi and Zhipin Wang and Hongxing Fan and Zhenfei Yin and Lu Sheng and Yu Qiao and Jing Shao
 title: Ch3ef
 excerpt: Assessment of Multimodal Large Language Models in Alignment with Human Values
-logo: ~/assets/images/dataset/Ch3ef.png
-image: ~/assets/images/dataset/Ch3ef.png
+logo: /images/dataset/Ch3ef.png
+image: /images/dataset/Ch3ef.png
 journal: arXiv preprint arXiv:2403.17830
 tags:
   - Image

@@ -3,8 +3,8 @@ publishDate: 2024-01-01T00:00:00Z
 author: Lu, Chaochao and Qian, Chen and Zheng, Guodong and Fan, Hongxing and Gao, Hongzhi and Zhang, Jie and Shao, Jing and Deng, Jingyi and Fu, Jinlan and Huang, Kexin and others
 title: Gemini
 excerpt: 'From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities'
-logo: ~/assets/images/dataset/Gemini.png
-image: ~/assets/images/dataset/Gemini.png
+logo: /images/dataset/Gemini.png
+image: /images/dataset/Gemini.png
 journal: arXiv preprint arXiv:2401.15071
 tags:
   - Image
