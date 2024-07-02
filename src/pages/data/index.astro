@@ -1,15 +1,24 @@
 ---
 import { dataList } from '../../utils/data';
 import Layout from '~/layouts/PageLayout.astro';
+import Dataset from '~/components/Dataset.astro';
+import Header from '~/components/widgets/Header.astro';
+import { headerData } from '~/navigation';
 ---
 
 <Layout>
-  <h1>Dataset</h1>
-  <ul>
+  <!-- <h1>Dataset</h1> -->
+  <!-- <ul>
     {dataList.map(data => (
       <li key={data.id}>
         <a href={`/data/${data.id}`}>{data.title}</a>
       </li>
     ))}
-  </ul>
+  </ul> -->
+  <Fragment slot="header">
+    <Header {...headerData} isSticky showToggleTheme />
+  </Fragment>
+  <div style="display: flex;justify-content: center;">
+    <Dataset papers={dataList}/>
+  </div>
 </Layout>

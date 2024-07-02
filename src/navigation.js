@@ -2,10 +2,10 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
-      text: 'People',
-      href: getPermalink('/team'),
-    },
+    // {
+    //   text: 'People',
+    //   href: getPermalink('/team'),
+    // },
     {
       text: 'Research',
       href: getPermalink('/research'),
@@ -14,13 +14,13 @@ export const headerData = {
       text: 'Events',
       href: getPermalink('/event'),
     },
-    {
-      text: 'Blog',
-      href: getPermalink('/blog'),
-    },
+    // {
+    //   text: 'Blog',
+    //   href: getPermalink('/blog'),
+    // },
     {
       text: 'Dataset',
-      href: getPermalink('/dataset'),
+      href: getPermalink('/data'),
     },
     {
       text:'Code',

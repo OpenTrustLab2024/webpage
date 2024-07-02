@@ -1,0 +1,78 @@
+---
+const { papers = [] } = Astro.props;
+---
+
+<style>
+  .papers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .paper-card {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .paper-card:hover {
+    border-color: #2563eb;
+    cursor: pointer;
+  }
+
+  .paper-image {
+    max-width: 200px;
+    margin-right: 16px;
+  }
+
+  .paper-details {
+    flex-grow: 1;
+  }
+
+  .paper-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .paper-authors, .paper-publication {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin: 4px 0;
+  }
+
+  .paper-tags {
+    background-color: #f3f4f6; /* Light gray background */
+    color: #111827; /* Black text */
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 0.75rem;
+  }
+</style>
+
+<div class="papers-container">
+  {papers.map(paper => (
+    <a href={paper.link} class="paper-card" target="_blank" rel="noopener noreferrer" target="_top">
+      <img src={paper.imageSrc} alt="Paper Image" class="paper-image" />
+      <div class="paper-details">
+        <h2 class="paper-title">{paper.title}</h2>
+        <p class="paper-authors">{paper.authors}</p>
+        <p class="paper-publication">{paper.publication}</p>
+        {/* <div>
+          {paper.tags.map(tag => (
+            <span class="paper-tags">{tag}</span>
+          ))}
+        </div> */}
+      </div>
+    </a>
+  ))}
+</div>
