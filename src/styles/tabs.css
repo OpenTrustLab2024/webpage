@@ -1,6 +1,46 @@
-.tab:hover button{
+.tab:hover .tabs-btn{
     color :rgb(1,97,239);
-    text-decoration: underline;
+    z-index:1;
+    background:transparent;
+}
+
+.tabs-btn {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    color : black;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: .3s;
+}
+
+.tabs-btn:before {
+    transition: .3s;
+    z-index:-1;
+}
+
+.tabs-btn:after {
+    transition: .3s;
+    z-index:-1;
+}  
+
+.tabs-btn:after,.tabs-btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(243, 244, 246);
+    z-index:-2;
+    border-radius: 4px;
+}
+
+.tab:hover .tabs-btn:after,.tab:hover .tabs-btn:before {
+    width: 100%;
 }
 
 .tab {
@@ -8,7 +48,7 @@
     padding: 1.5em;
 }
 
-.active button{  
+.active .tabs-btn{  
     color :rgb(1,97,239);
-    text-decoration: underline;
+    background: rgb(243, 244, 246);
 }

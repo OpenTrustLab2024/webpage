@@ -5,6 +5,7 @@ title: {
   title : ChEF,
   url : https://openlamm.github.io/paper_list/ChEF
 }
+code_url : https://github.com/OpenGVLab/LAMM
 excerpt: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models
 logo: /images/dataset/Chef.png
 image: /images/dataset/Chef.png

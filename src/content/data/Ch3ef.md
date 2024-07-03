@@ -5,6 +5,7 @@ title : {
   title: Ch3ef,
   url : https://openlamm.github.io/paper_list/ChEF
 }
+code_url : https://github.com/OpenGVLab/LAMM
 excerpt: Assessment of Multimodal Large Language Models in Alignment with Human Values
 logo: /images/dataset/Ch3ef.png
 image: /images/dataset/Ch3ef.png

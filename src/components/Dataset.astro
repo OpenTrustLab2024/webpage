@@ -1,5 +1,10 @@
 ---
 const { papers = [] } = Astro.props;
+// papers.sort((a, b) => {
+//   const dateA = new Date(a.time);
+//   const dateB = new Date(b.time);
+//   return dateA.getTime() - dateB.getTime();
+// });
 ---
 
 <style>
@@ -27,6 +32,10 @@ const { papers = [] } = Astro.props;
     cursor: pointer;
   }
 
+  .paper-card:hover .paper-title {
+    color: #2563eb;
+  }
+
   .paper-image {
     max-width: 200px;
     margin-right: 16px;
@@ -40,12 +49,24 @@ const { papers = [] } = Astro.props;
     font-size: 1.25rem;
     font-weight: bold;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 920px;
+    display: block;
+    transition: 0.3s;
   }
 
-  .paper-authors, .paper-publication {
+  .paper-authors,
+  .paper-publication {
     font-size: 0.75rem;
     color: #6b7280;
     margin: 4px 0;
+  }
+
+  .paper-tags-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .paper-tags {
@@ -54,25 +75,67 @@ const { papers = [] } = Astro.props;
     padding: 2px 8px;
     border-radius: 6px;
     display: inline-block;
-    margin-right: 4px;
+    margin-right: 0.7em;
     font-size: 0.75rem;
+  }
+
+  .paper-time-container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  .paper-time-container .paper-time {
+    color: #111827; /* Black text */
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 0.7em;
+    font-size: 0.8rem;
+  }
+
+  .paper-time-container svg {
+    width: 1rem;
+    height: 1rem;
   }
 </style>
 
 <div class="papers-container">
-  {papers.map(paper => (
-    <a href={paper.link} class="paper-card" target="_blank" rel="noopener noreferrer" target="_top">
-      <img src={paper.imageSrc} alt="Paper Image" class="paper-image" />
-      <div class="paper-details">
-        <h2 class="paper-title">{paper.title}</h2>
-        <p class="paper-authors">{paper.authors}</p>
-        <p class="paper-publication">{paper.publication}</p>
-        {/* <div>
-          {paper.tags.map(tag => (
-            <span class="paper-tags">{tag}</span>
-          ))}
-        </div> */}
-      </div>
-    </a>
-  ))}
+  {
+    papers.map((paper) => (
+      <a href={paper.link} class="paper-card" target="_blank" rel="noopener noreferrer" target="_top">
+        <img src={paper.imageSrc} alt="Paper Image" class="paper-image" />
+        <div class="paper-details">
+          <h2 class="paper-title">{paper.title}</h2>
+          <div class="paper-tags-container">
+            {paper.tags.map((tag) => (
+              <span class="paper-tags">{tag}</span>
+            ))}
+          </div>
+          <p class="paper-authors">{paper.authors}</p>
+          <p class="paper-publication">{paper.publication}</p>
+          <div class="paper-time-container">
+            <svg
+              t="1719985799779"
+              class="icon"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="2490"
+              width="200"
+              height="200"
+            >
+              <path
+                d="M512 563.2h179.2a25.6 25.6 0 0 1 0 51.2h-204.8a25.4976 25.4976 0 0 1-25.6-25.6v-256a25.6 25.6 0 0 1 51.2 0V563.2z m396.288 129.024a25.6 25.6 0 0 1-46.592-21.248 384 384 0 1 0-114.688 144.7424 25.6 25.6 0 0 1 31.3344 40.448 435.2 435.2 0 1 1 129.8944-163.9936z"
+                fill="#000000"
+                p-id="2491"
+              />
+            </svg>
+            <div class="paper-time">{paper.time}</div>
+          </div>
+        </div>
+      </a>
+    ))
+  }
 </div>

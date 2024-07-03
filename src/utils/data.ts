@@ -8,7 +8,8 @@ export const dataList = [
     publication: 'arXiv:2403.17830',
     time: 'Tue, 26 Mar 2024 16:10:21 UTC',
     link:'/data/Ch3ef',
-    imageSrc:'/images/ch3ef.png'
+    imageSrc: '/images/ch3ef.png',
+    tags: ['Image', 'Natural Language', 'Understanding', 'Detection', 'Reasoning', 'Trustworthy']
   },
   {
     id: 'Chef',
@@ -17,7 +18,8 @@ export const dataList = [
     publication: 'arXiv:2311.02692',
     time: 'Sun, 11 Jun 2023 14:01:17 UTC',
     link:'/data/Chef',
-    imageSrc:'/images/ChEF.png'
+    imageSrc: '/images/ChEF.png',
+    tags: ['Image', 'Natural Language', 'Understanding', 'Detection', 'Reasoning', 'Trustworthy']
   },
   {
     id: 'Gemini',
@@ -27,7 +29,8 @@ export const dataList = [
     publication: 'Technicle Report',
     time: 'Fri, 26 Jan 2024 18:53:03 UTC',
     link:'/data/Gemini',
-    imageSrc:'/images/MLLMs.png'
+    imageSrc: '/images/MLLMs.png',
+    tags: ['Image', 'Natural Language', 'Code', 'Video', 'VQA', 'QA', 'Trustworthy', 'Detection']
   },
   {
     id: 'PsySafe',
@@ -38,7 +41,8 @@ export const dataList = [
     publication: 'ACL(Annual Meeting of the Association for Computational Linguistics) 2024',
     time: 'Mon, 22 Jan 2024 12:11:55 UTC',
     link:'/data/PsySafe',
-    imageSrc:'/images/psysafe.png'
+    imageSrc: '/images/psysafe.png',
+    tags:['Natural Language','Agent','Trustworthy']
   },
   {
     id: 'SALAD-Bench',
@@ -47,6 +51,7 @@ export const dataList = [
     publication: 'ACL(Annual Meeting of the Association for Computational Linguistics) 2024',
     time: 'Wed, 7 Feb 2024 17:33:54 UTC',
     link:'/data/SALAD-Bench',
-    imageSrc:'/images/saladbench.png'
+    imageSrc: '/images/saladbench.png',
+    tags: ['Natural Language', 'JSON', 'Evaluation', 'LLM Safety', 'apache-2.0']
   },
 ];

@@ -5,6 +5,7 @@ title: {
   title : SALAD-Bench,
   url : https://adwardlee.github.io/salad_bench/
 }
+code_url : https://github.com/OpenSafetyLab/SALAD-BENCH
 excerpt: A Hierarchical and Comprehensive Safety Benchmark for Large Language Models
 logo: /images/dataset/SALAD-Bench-logo.png
 image: /images/dataset/SALAD-Bench.png

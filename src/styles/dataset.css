@@ -8,6 +8,12 @@ a{
     text-decoration: none;
 }
 
+svg{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
 li{
     list-style-type:none;
 }
@@ -24,10 +30,23 @@ li{
 }
 
 .datasetName {
+    display: inline-block;
     font-weight: bold;
     font-size: 30px;
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.title-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-link-container a>div{
+    margin-left: 2rem;
 }
 
 .mainContainer {  
@@ -39,7 +58,7 @@ li{
 .left-section {  
     flex: 3; /* 占据3/4的空间 */  
     /* background-color: #f0f0f0; */
-    padding: 20px;
+    padding-bottom: 20px;
     padding-left: 180px;
     padding-right: 180px;
 }  

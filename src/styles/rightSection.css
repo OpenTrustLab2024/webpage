@@ -20,7 +20,12 @@ a{
 
 a:hover{
     color:rgb(1,97,239);
+}
 
+svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
 }
 
 p{

@@ -5,6 +5,7 @@ title : {
   title: PsySafe,
   url : https://github.com/AI4Good24/PsySafe
 }
+code_url : https://github.com/AI4Good24/PsySafe
 excerpt: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety
 logo: /images/dataset/PsySafe.png
 image: /images/dataset/PsySafe.png
