@@ -11,7 +11,7 @@ const { links, authors, bibtex } = Astro.props;
 
 <div>
   <h4>Paper Link</h4>
-  <a href={links.url}>{links.text}</a>
+  <a href={links.url} target="_blank">{links.text}</a>
   <h4>Authors</h4>
   <ul>
     {

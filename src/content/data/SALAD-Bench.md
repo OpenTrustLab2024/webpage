@@ -1,11 +1,17 @@
 ---
 publishDate: 2024-02-07T00:00:00Z
 author: Li, Lijun and Dong, Bowen and Wang, Ruohui and Hu, Xuhao and Zuo, Wangmeng and Lin, Dahua and Qiao, Yu and Shao, Jing
-title: SALAD-Bench
+title: {
+  title : SALAD-Bench,
+  url : https://adwardlee.github.io/salad_bench/
+}
 excerpt: A Hierarchical and Comprehensive Safety Benchmark for Large Language Models
 logo: /images/dataset/SALAD-Bench-logo.png
 image: /images/dataset/SALAD-Bench.png
-journal: arXiv preprint arXiv:2402.05044,
+journal: {
+  title : arXiv preprint arXiv:2402.05044,
+  url : https://arxiv.org/abs/2402.05044,
+}
 tags:
   - Natural Language
   - JSON, Evaluation

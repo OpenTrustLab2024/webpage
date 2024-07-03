@@ -16,15 +16,15 @@ import { getCollection } from 'astro:content';
 
 const posts = await getCollection('data');
 export async function getStaticPaths() {
-  return dataList.map(data => ({
+  return dataList.map((data) => ({
     params: { id: data.id },
   }));
 }
 
-const { id } = Astro.params ;
-const dataItem = dataList.find(data => data.id === id);
+const { id } = Astro.params;
+const dataItem = dataList.find((data) => data.id === id);
 function findIndexById(id) {
-    return dataList.findIndex(item => item.id === id);
+  return dataList.findIndex((item) => item.id === id);
 }
 const index = findIndexById(id);
 const { body } = posts[index];
@@ -48,8 +48,8 @@ const authors = author.split(' and ').map((item) => ({
   name: item,
 }));
 const paperLinks = {
-  url: '',
-  text: journal,
+  url: journal.url,
+  text: journal.title,
 };
 
 const text = body;
@@ -59,8 +59,6 @@ console.log(mainFigPath);
 const metadata = {
   title: 'Dataset',
 };
-
-const datasetName = title;
 ---
 
 <Layout metadata={metadata}>
@@ -76,7 +74,7 @@ const datasetName = title;
     <div class="border-b-4 pb-4 ml-16 mr-16">
       <center>
         <h2 class="datasetName">
-          {datasetName}
+          <a href={title.url} target="_blank">{title.title}</a>
         </h2>
         <Tags tags={tags} />
       </center>
