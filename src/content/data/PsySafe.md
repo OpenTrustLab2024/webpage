@@ -1,11 +1,17 @@
 ---
 publishDate: 2024-01-01T00:00:00Z
 author: Zhang, Zaibin and Zhang, Yongting and Li, Lijun and Gao, Hongzhi and Wang, Lijun and Lu, Huchuan and Zhao, Feng and Qiao, Yu and Shao, Jing
-title: PsySafe
+title : {
+  title: PsySafe,
+  url : https://github.com/AI4Good24/PsySafe
+}
 excerpt: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety
 logo: /images/dataset/PsySafe.png
 image: /images/dataset/PsySafe.png
-journal: arXiv preprint arXiv:2401.11880
+journal: {
+  title : arXiv preprint arXiv:2401.11880,
+  url : https://arxiv.org/abs/2401.11880
+}
 tags:
   - Natural Language
   - Agent

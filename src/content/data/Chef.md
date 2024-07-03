@@ -1,11 +1,17 @@
 ---
 publishDate: 2023-11-01T00:00:00Z
 author: Zhelun Shi and Zhipin Wang and Hongxing Fan and Zhenfei Yin and Lu Sheng and Yu Qiao and Jing Shao
-title: ChEF
+title: {
+  title : ChEF,
+  url : https://openlamm.github.io/paper_list/ChEF
+}
 excerpt: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models
 logo: /images/dataset/Chef.png
 image: /images/dataset/Chef.png
-journal: https://arxiv.org/abs/2311.02692
+journal: {
+  title : 	arXiv:2311.02692,
+  url : https://arxiv.org/abs/2311.02692,
+}
 tags:
   - Image
   - Natural Language
