@@ -1,5 +1,80 @@
+.tab1:hover .tabs-btn{
+    color :rgb(1,97,239);
+    z-index:1;
+    background:transparent;
+}
+
+.tab2:hover .tabs-btn{
+    color :rgb(1,97,239);
+    z-index:1;
+    background:transparent;
+}
+
+.tabs-btn {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    color : black;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: .3s;
+}
+
+.tabs-btn:before {
+    transition: .3s;
+    z-index:-1;
+}
+
+.tabs-btn:after {
+    transition: .3s;
+    z-index:-1;
+}  
+
+.tabs-btn:after,.tabs-btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(243, 244, 246);
+    z-index:-2;
+    border-radius: 4px;
+}
+
+.tab1:hover .tabs-btn:after,.tab1:hover .tabs-btn:before {
+    width: 100%;
+}
+.tab2:hover .tabs-btn:after,.tab2:hover .tabs-btn:before {
+    width: 100%;
+}
+
+.tab1{
+    margin: 1em;
+    padding: 1.5em;
+}
+.tab2{
+    margin: 1em;
+    padding: 1.5em;
+}
+
+.active .tabs-btn{  
+    color :rgb(1,97,239);
+    background: rgb(243, 244, 246);
+}
+
+
+.content-container{
+    margin-top: 1em;
+    position: relative;
+}
+
 .content{
-    white-space: pre-wrap;
+    position: absolute;
+    width: 100%;
 }
 
 .title {
@@ -15,6 +90,7 @@ h1 {
 h2 {
     font-size: 21px;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -25,4 +101,10 @@ h3 {
 #htmlText img{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

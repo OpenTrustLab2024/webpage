@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-const dataItem = dataList.find((data) => data.id === id);
+// const dataItem = dataList.find((data) => data.id === id);
 function findIndexById(id) {
   return posts.findIndex((item) => item.slug === id.toLowerCase());
 }
@@ -36,15 +36,17 @@ const { bibtex, tags, author, title, image, journal, code_url } = posts[index].d
 //     console.error(`Failed to read file at ${filePath}:`, error);
 //   }
 // }
-const getImagePath = (filePath: string) => {
-  if (filePath.startsWith('~')) {
-    return filePath.replace('~/', '/src/');
-  }
-};
+// const getImagePath = (filePath: string) => {
+//   if (filePath.startsWith('~')) {
+//     return filePath.replace('~/', '/src/');
+//   }
+// };
+
 const authors = author.split(' and ').map((item) => ({
   avatar: 'https://img.ixintu.com/download/jpg/20200910/f9256155491e54bf5e99bf29eece0156_512_512.jpg!ys',
   name: item,
 }));
+
 const paperLinks = {
   url: journal.url,
   text: journal.title,
@@ -64,7 +66,6 @@ const metadata = {
 
   <div>
     <div class="figureContainer">
-      <!-- <img src="/src/assets/images/dataset/SALAD-Bench.png" class="figure" /> -->
       <img src={image} class="figure" />
     </div>
     <div class="border-b-4 pb-4 ml-16 mr-16 mb-0">
@@ -151,14 +152,13 @@ const metadata = {
     </div>
     <div class="mainContainer">
       <div class="left-section">
-        <Tabs />
+        <!-- <Tabs /> -->
         <DescriptionSection text={text} />
       </div>
       <div class="right-section">
         <RightSection links={paperLinks} authors={authors} bibtex={bibtex} />
       </div>
       <div style="flex:0.25"></div>
-      <!-- 占位 -->
     </div>
   </div>
 </Layout>

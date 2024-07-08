@@ -1,25 +1,23 @@
 ---
-publishDate: 2023-11-01T00:00:00Z
+publishDate: 2023/11/05
 author: Zhelun Shi and Zhipin Wang and Hongxing Fan and Zhenfei Yin and Lu Sheng and Yu Qiao and Jing Shao
 title: {
-  title : ChEF,
+  title : ChEF Dataset,
   url : https://openlamm.github.io/paper_list/ChEF
 }
 code_url : https://github.com/OpenGVLab/LAMM
-excerpt: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models
-logo: /images/dataset/Chef.png
+excerpt: ChEF dataset is designed for standardized assessment of Multimodal Large Language Models (MLLMs) to assess whether a MLLM is well aligned in semantic, logic, and human values aspects.
 image: /images/dataset/Chef.png
 journal: {
   title : 	arXiv:2311.02692,
   url : https://arxiv.org/abs/2311.02692,
 }
-tags:
-  - Image
-  - Natural Language
-  - Understanding
-  - Detection
-  - Reasoning
-  - Trustworthy
+tags: {
+      data: ['Image', 'Natural Language'],
+      format: ['Image-Text-Option', 'Triplet'],
+      task: ['Understanding', 'Detection', 'Reasoning', 'Trustworthiness'],
+      license : []
+    }
 bibtex: '@misc{shi2023chefcomprehensiveevaluationframework,
       title={ChEF: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models}, 
       author={Zhelun Shi and Zhipin Wang and Hongxing Fan and Zhenfei Yin and Lu Sheng and Yu Qiao and Jing Shao},

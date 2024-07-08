@@ -6,20 +6,91 @@ export interface Props {
 }
 
 const { text } = Astro.props;
-const htmlText = marked.parse(text);
+const tabs_content = text.split('tabs-break!important');
+const description = tabs_content[0];
+const example_data = tabs_content[1]
+  ? tabs_content[1]
+  : `
+- ![图片](/images/empty.png)
+- <center style="color:#8a8a8a">暂无数据</center>
+`;
+const htmlDescription = marked.parse(description);
+const htmlData = marked.parse(example_data);
 ---
 
-<div style="margin-top: 1em;">
-  <center>
-    <h2 class="title">Introduction</h2>
-  </center>
-  <div id="htmlText">
-    {htmlText}
+<div class="flex flex-row">
+  <div class="tab1 active">
+    <button class="tabs-btn">description</button>
+  </div>
+  <div class="tab2">
+    <button class="tabs-btn">Example Data</button>
+  </div>
+  <!-- <div class="tab">
+    <button class="tabs-btn">Data Link</button>
+  </div> -->
+</div>
+
+<div class="content-container">
+  <div class="content opacity-100 duration-75" id="description">
+    <center>
+      <h2 class="title">Introduction</h2>
+    </center>
+    <div id="htmlDescription">
+      {htmlDescription}
+    </div>
+  </div>
+
+  <div class="content opacity-0 duration-75" id="example-data">
+    <center>
+      <h2 class="title">Example Data</h2>
+    </center>
+    <code class="json" id="htmlData">
+      {htmlData}
+    </code>
   </div>
 </div>
+
 <script>
-  let div = document.querySelector('#htmlText');
-  const htmlText = div.textContent;
-  div.innerHTML = htmlText;
-  console.log(htmlText);
+  function isDataEmpty(str) {
+    return str.indexOf('/images/empty.png');
+  }
+
+  let descriptionDiv = document.querySelector('#htmlDescription');
+  const htmlDescription = descriptionDiv.textContent;
+  descriptionDiv.innerHTML = htmlDescription;
+
+  let dataDiv = document.querySelector('#htmlData');
+  const htmlData = dataDiv.textContent;
+  dataDiv.innerHTML = htmlData;
+
+  const tab1 = document.querySelector('.tab1');
+  const tab2 = document.querySelector('.tab2');
+
+  const description = document.querySelector('#description');
+  const data = document.querySelector('#example-data');
+
+  if (isDataEmpty(htmlData) !== -1) {
+    dataDiv?.classList.add('center');
+  }
+
+  console.log(isDataEmpty(htmlData));
+
+  tab1?.addEventListener('click', function () {
+    tab2?.classList.remove('active');
+    tab1?.classList.add('active');
+
+    description?.classList.add('opacity-100');
+    description?.classList.remove('opacity-0');
+    data?.classList.add('opacity-0');
+    data?.classList.remove('opacity-100');
+  });
+  tab2?.addEventListener('click', function () {
+    tab1?.classList.remove('active');
+    tab2?.classList.add('active');
+
+    data?.classList.add('opacity-100');
+    data?.classList.remove('opacity-0');
+    description?.classList.add('opacity-0');
+    description?.classList.remove('opacity-100');
+  });
 </script>

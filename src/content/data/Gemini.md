@@ -6,22 +6,19 @@ title : {
   url : https://arxiv.org/abs/2401.15071
 }
 code_url : 
-excerpt: 'From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities'
+excerpt: Gemini Trustworthy Evaluation Dataset is a manually constructed evaluation dataset to comprehensively assess Gemini in various tasks (i.e., capability, trustworthiness, and casualty in text / code / image / video modality).
 logo: /images/dataset/Gemini.png
 image: /images/dataset/Gemini.png
 journal: {
   title : arXiv preprint arXiv:2401.15071,
   url : https://arxiv.org/abs/2401.15071
 }
-tags:
-  - Image
-  - Natural Language
-  - Code
-  - Video
-  - VQA
-  - QA
-  - Trustworthy
-  - Detection
+tags: {
+      data: ['Image', 'Natural Language', 'Code', 'Video'],
+      format: [' Instructions with Auxiliary Data'],
+      task: ['Trustworthiness',' Agent Safety',' Question Answering'],
+      license : []
+    }
 bibtex: '@article{lu2024gpt,
   title={From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities},
   author={Lu, Chaochao and Qian, Chen and Zheng, Guodong and Fan, Hongxing and Gao, Hongzhi and Zhang, Jie and Shao, Jing and Deng, Jingyi and Fu, Jinlan and Huang, Kexin and others},
