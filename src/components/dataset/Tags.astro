@@ -7,18 +7,18 @@ const { tags } = Astro.props;
 ---
 
 <div class="tagsContainer">
-  <ul>
-    <li>
+  <div>
+    <span>
       {tags.data.map((item: string) => <a style="background-color: rgb(206, 252, 138);">{item}</a>)}
-    </li>
-    <li>
+    </span>
+    <span>
       {tags.format.map((item: string) => <a style="background-color: rgb(162, 222, 250);">{item}</a>)}
-    </li>
-    <li>
+    </span>
+    <span>
       {tags.task.map((item: string) => <a style="background-color: rgb(248, 250, 150);">{item}</a>)}
-    </li>
-    <li>
+    </span>
+    <span>
       {tags.license.length >= 1 && tags.license.map((item: string) => <a style="background-color: #e9e9e9;">{item}</a>)}
-    </li>
-  </ul>
+    </span>
+  </div>
 </div>
