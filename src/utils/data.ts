@@ -9,7 +9,7 @@ export const dataList = [
     description : 'Ch^3EF dataset is the extended version of ChEF dataset to assess whether a multimodal large language model is well aligned in semantic, logic, and human values aspects. ',
     time: '2024/03/26',
     link:'/data/Ch3ef',
-    imageSrc: '/src/assets/images/dataset/Ch3ef.png',
+    imageSrc: '/images/dataset/Ch3ef.png',
     tags: {
       data: ['Image', 'Natural Language'],
       format: ['Image-Text-Option', 'Triplet'],
@@ -25,7 +25,7 @@ export const dataList = [
     description : 'ChEF dataset is designed for standardized assessment of Multimodal Large Language Models (MLLMs) to assess whether a MLLM is well aligned in semantic, logic, and human values aspects.',
     time: '2023/11/05',
     link:'/data/Chef',
-    imageSrc: '/src/assets/images/dataset/Chef.png',
+    imageSrc: '/images/dataset/Chef.png',
     tags: {
       data: ['Image', 'Natural Language'],
       format: ['Image-Text-Option', 'Triplet'],
@@ -42,7 +42,7 @@ export const dataList = [
     description: 'Gemini Trustworthy Evaluation Dataset is a manually constructed evaluation dataset to comprehensively assess Gemini in various tasks (i.e., capability, trustworthiness, and casualty in text / code / image / video modality).' ,
     time: '2024/01/26',
     link:'/data/Gemini',
-    imageSrc: '/src/assets/images/dataset/Gemini.png',
+    imageSrc: '/images/dataset/Gemini.png',
     tags: {
       data: ['Image', 'Natural Language', 'Code', 'Video'],
       format: [' Instructions with Auxiliary Data'],
@@ -60,7 +60,7 @@ export const dataList = [
     description: 'PsySafe dataset is a specially designed dataset to evaluate the safety of multi-agent systems from both psychological and behavioral perspectives.',
     time: '2024/01/22',
     link:'/data/PsySafe',
-    imageSrc: '/src/assets/images/dataset/PsySafe-logo.png',
+    imageSrc: '/images/dataset/PsySafe-logo.png',
     tags: {
       data: ['Natural Language'],
       format: ['Task-Label-Dimension','Triplet'],
@@ -76,7 +76,7 @@ export const dataList = [
     description: 'A large-scale comprehensive safety benchmark specifically designed for evaluating LLMs, attack methods, and defense strategies.',
     time: '2024/02/07',
     link:'/data/SALAD-Bench',
-    imageSrc: '/src/assets/images/dataset/SALAD-Bench-logo.png',
+    imageSrc: '/images/dataset/SALAD-Bench-logo.png',
     tags: {
       data: ['Natural Language'],
       format: ['JSON'],
