@@ -109,6 +109,6 @@ h3 {
     justify-content: center;
 }
 
-#htmlData {
-    white-space: pre;
+#htmlData p{
+    white-space: pre-wrap;
 }
