@@ -80,4 +80,4 @@ Each data sample in PsySafe dataset is a triplet with the structure of (task, la
 
 tabs-break!important
 
-![图片](/src/assets/images/dataset/PsySafe-egdata.png)
+![图片](/images/dataset/PsySafe-egdata.png)
