@@ -10,16 +10,16 @@ const { links, authors, bibtex } = Astro.props;
 ---
 
 <div>
-  <h4>Paper Link</h4>
-  <a href={links.url} target="_blank">{links.text}</a>
-  <h4>Authors</h4>
+  <h4 class="section-title">Paper Link</h4>
+  <a href={links.url} target="_blank" class="dark:text-gray-400">{links.text}</a>
+  <h4 class="section-title">Authors</h4>
   <ul>
     {
       authors
         ? authors.map((item) => {
             return (
               <li>
-                <a href="" class="authorContainer flex">
+                <a href="" class="authorContainer flex dark:text-gray-400 dark:border-gray-400">
                   <img src={item.avatar} class="avatar w-12 h-12" />
                   <div class="authorName">{item.name}</div>
                 </a>
@@ -29,6 +29,6 @@ const { links, authors, bibtex } = Astro.props;
         : null
     }
   </ul>
-  <h4>Bibtex</h4>
-  <p>{bibtex}</p>
+  <h4 class="section-title">Bibtex</h4>
+  <p class="dark:text-gray-400">{bibtex}</p>
 </div>

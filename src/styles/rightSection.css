@@ -1,11 +1,11 @@
-h4{
+.section-title{
     font-size: 20px;
     font-weight: bold;
     margin-top: 8px;
     margin-bottom: 2px;
 }
 
-h4+*{
+.section-title+*{
     margin-left: 1em;
 }
 

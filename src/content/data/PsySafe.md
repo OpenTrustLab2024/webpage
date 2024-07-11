@@ -28,53 +28,12 @@ bibtex: '@article{zhang2024psysafe,
 
 ---
 
-<!-- ## Introduction
-
-We propose the **PsySafe** dataset for modern multi-agent systems. This dataset focuses on three key aspects:
-
-- Identifying how dark personality traits in agents might lead to risky behaviors.
-- Designing defense strategies to mitigate these risks.
-- Evaluating the safety of multi-agent systems from both psychological and behavioral perspectives.
-
-## Main Findings and Contributions
-
-### Identification of Safety Vulnerabilities
-
-The research reveals that dark psychological states in agents pose significant threats to the safety of MAS. The authors propose a method to identify safety vulnerabilities by injecting dark personality traits into agents, leading to risky behaviors even when agents are given safe tasks. Key observations include:
-
-- Collective dangerous behaviors among agents.
-- Agents' self-reflection during dangerous behavior.
-- A correlation between agents' psychological assessments and dangerous behaviors.
-
-### Comprehensive Evaluation of Safety
-
-The paper introduces a method to evaluate the safety of MAS from psychological and behavioral perspectives. The evaluations include:
-
-- **Psychological evaluations** using dark triad psychological tests to assess agents' tendencies towards dangerous behavior.
-- **Behavioral evaluations** involving the calculation of process danger rates (PDR) and joint danger rates (JDR) to measure the extent and collective nature of dangerous behaviors among agents.
-
-### Defense Strategies
-
-The framework proposes various defense mechanisms to mitigate safety risks in MAS:
-
-- **Input Defense**: Filtering dangerous content at the input level, though found to be insufficient for dark trait injections.
-- **Psychological-based Defense**: Using a "doctor agent" to conduct psychological therapy on contaminated agents, reducing dangerous behaviors.
-- **Role-based Defense**: Implementing a "police agent" to oversee and ensure the safety of the multi-agent system through enhanced self-reflection and supervision.
-
-### Experimental Findings
-
-Experiments have demonstrated the effectiveness of the proposed framework and defense strategies in reducing dangerous behaviors in MAS. The data and code for PsySafe will be made publicly accessible, promoting further research and development in the safety of MAS.
-
-## Conclusion
-
-The paper highlights the importance of addressing psychological factors in MAS safety and provides a comprehensive approach to evaluating and mitigating potential risks. -->
-
-## Description:
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Description</h2>
 
 PsySafe dataset includes 855 triplets with various safe or unsafe tasks, which focuses on three key aspects: identifying how dark personality traits in agents might lead to risky behaviors; designing defense strategies to mitigate these risks; and evaluating the safety of multi-agent systems from both psychological and behavioral perspectives.
 <br />
 
-## Data:
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Data</h2>
 
 Each data sample in PsySafe dataset is a triplet with the structure of (task, label, dimension). Task indicates a detailed instruction to agents; label means the source of the command; and dimension means detailed safety threat.
 

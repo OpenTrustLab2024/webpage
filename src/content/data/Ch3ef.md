@@ -28,11 +28,11 @@ bibtex: '@article{shi2024assessment,
 
 ---
 
-## Description
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Description</h2>
 
 Ch3Ef dataset contains 1002 human-annotated data samples, covering 12 domains and 46 tasks based on the hhh principle. We also present a unified evaluation strategy supporting assessment across various scenarios and different perspectives. This dataset has been utilized in the ICML TiFA Workshop challenge.
 <br />
 
-## Data
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Data</h2>
 
 There is only one public test set, divided into three dimensions: helpful, honest, and harmless. The dataset includes a collection of {image_list, query, option} triplets, where each image_list can contain either a single image or multiple images. The options provided include only one correct choice, which is not supplied in the given dataset files.

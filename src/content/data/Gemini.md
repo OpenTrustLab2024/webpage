@@ -28,22 +28,22 @@ bibtex: '@article{lu2024gpt,
 
 ---
 
-## Description
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Description</h2>
 
 The Gemini Trustworthy Evaluation Dataset includes 232 manually designed queries, which focus on the generalizability, trustworthiness, and causal reasoning capabilities of recent proprietary and open-source MLLMs across four modalities: i.e., text, code, image, and video, ultimately aiming to improve the transparency of MLLMs. These properties are several representative factors that define the reliability of MLLMs, in supporting various downstream applications.
 
-## Critical Findings
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Critical Findings</h2>
 
-### Text and Coding Capabilities
+<h3 style="font-size: 18px;font-weight: bold;">Text and Coding Capabilities</h3>
 
 - GPT-4 outperforms Gemini, which in turn is better than open-source models Llama-2-70B-Chat and Mixtral-8x7B-Instruct-v0.1.
 - Mixtral-8x7B-Instruct-v0.1 performs better than Llama-2-70B-Chat in both text and code.
 
-### Multilingual Capabilities
+<h3 style="font-size: 18px;font-weight: bold;">Multilingual Capabilities</h3>
 
 - Gemini excels in multilingual tasks, outperforming GPT-4 and open-source models by understanding idiomatic expressions and complex sentence structures better, especially in Chinese translations.
 
-### Mathematical and Reasoning Ability
+<h3 style="font-size: 18px;font-weight: bold;">Mathematical and Reasoning Ability</h3>
 
 - GPT-4 performs better in mathematical and reasoning tasks compared to Gemini and open-source models, which often make calculation errors or fail to recall relevant knowledge correctly.
 

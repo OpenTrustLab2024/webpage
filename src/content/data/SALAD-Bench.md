@@ -27,44 +27,12 @@ bibtex: '@article{li2024salad,
 }'
 ---
 
-<!-- # Summary
-
-In the rapidly evolving landscape of Large Language Models (LLMs), ensuring robust safety measures is of paramount importance. To address this critical need, we propose **SALAD-Bench**, a safety benchmark specifically designed for evaluating LLMs, attack methods, and defense strategies.
-
-Distinguished by its extensive scope, **SALAD-Bench** surpasses conventional benchmarks with its large scale, rich diversity, intricate three-level taxonomy, and versatile functionalities. **SALAD-Bench** features a meticulously curated array of questions, ranging from standard queries to complex ones enriched with attack and defense modifications, as well as multiple-choice formats.
-
-To effectively manage the inherent complexity, we introduce an innovative evaluator, the LLM-based **MD-Judge**, for QA pairs, with a particular focus on attack-enhanced queries, ensuring a seamless and reliable evaluation process. These components extend **SALAD-Bench** beyond standard LLM safety evaluation to encompass both LLM attack and defense methods evaluation, ensuring its joint-purpose utility. Our extensive experiments illuminate the resilience of LLMs against emerging threats and the efficacy of contemporary defense tactics.
-
-![图片](/images/dataset/SALAD-Bench-img1.png)
-
-## 1. Compact Taxonomy with Hierarchical Levels
-
-A large-scale LLM safety evaluation with hierarchical taxonomy, including 6 domain-level categories, 16 task-level categories, and 65 detailed classes.
-
-![图片](/images/dataset/SALAD-Bench-img2.png)
-
-## 2. Enhanced Difficulty and Complexity
-
-We propose the enhancement procedure to enhance the difficulty and complexity, including attack-enhanced subset, defense-enhanced subset, and multiple-choice questions subset.
-
-![图片](/images/dataset/SALAD-Bench-img3.png)
-
-## 3. Reliable and Seamless Evaluator
-
-For QA pairs, we propose the **MD-Judge**, a fine-tuned LLM designed to assess question-answer pairs. And for MCQs, we propose the **MCQ-Judge**, which employs in-context learning and regex parsing to identify unsafe choices from the options provided.
-
-![图片](/images/dataset/SALAD-Bench-img4.png)
-
-## 4. Joint-Purpose Utility
-
-Comprehensive evaluation for LLMs, attacking methods, and defense methods. -->
-
-## Description
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Description</h2>
 
 SALAD-Bench transcends conventional benchmarks through its large scale, rich diversity, intricate taxonomy spanning three levels, and versatile functionalities.SALAD-Bench is crafted with a meticulous array of questions, from standard queries to complex ones enriched with attack, defense modifications and multiple-choice. To effectively manage the inherent complexity, we introduce an innovative evaluator: the LLM-based MD-Judge for QA pairs with a particular focus on attack-enhanced queries, ensuring a seamless, and reliable evaluation. Above components extend SALAD-Bench from standard LLM safety evaluation to both LLM attack and defense methods evaluation, ensuring the joint-purpose utility.
 <br />
 
-## Data
+<h2 style="font-size: 21px;font-weight: bold;margin-bottom: 1rem;">Data</h2>
 
 All the samples in SALAD-Bench dataset are text-only prompts, including 1) questions, 2) generated or crawled source, 3) domain-level class (1-category) / task-level class (2-category) / category-level class (3-category), 4) choice & GT (available for multiple-choice questions). One can inference the answers directly with given questions and calculate class-specific safety rate with class labels.
 
