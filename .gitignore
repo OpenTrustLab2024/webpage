@@ -22,3 +22,6 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+
+# ignore github static pages deployment
+.github
